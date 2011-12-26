@@ -1,0 +1,16 @@
+2011-12-26 19:05:36 Error: [MissingConnectionException] Database connection "SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+" is missing, or could not be created.
+#0 C:\wamp\cake\lib\Cake\Model\Datasource\DboSource.php(244): Mysql->connect()
+#1 C:\wamp\cake\lib\Cake\Model\ConnectionManager.php(98): DboSource->__construct(Array)
+#2 C:\wamp\cake\lib\Cake\Model\Model.php(3214): ConnectionManager::getDataSource('default')
+#3 C:\wamp\cake\lib\Cake\Model\Model.php(1023): Model->setDataSource('default')
+#4 C:\wamp\cake\lib\Cake\Model\Model.php(3238): Model->setSource('users')
+#5 C:\wamp\cake\lib\Cake\Model\Model.php(2460): Model->getDataSource()
+#6 C:\wamp\cake\lib\Cake\Model\Model.php(1419): Model->find('first', Array)
+#7 C:\wamp\cake\blog\Controller\users_controller.php(38): Model->read(NULL, '1')
+#8 [internal function]: UsersController->view('1')
+#9 C:\wamp\cake\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 C:\wamp\cake\lib\Cake\Routing\Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\cake\lib\Cake\Routing\Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\cake\blog\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
