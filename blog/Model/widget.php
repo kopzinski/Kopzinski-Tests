@@ -1,7 +1,16 @@
 <?php
+App::uses('AppModel', 'Model');
+/**
+ * Widget Model
+ *
+ */
 class Widget extends AppModel {
-	var $name = 'Widget';
-	var $validate = array(
+/**
+ * Validation rules
+ *
+ * @var array
+ */
+	public $validate = array(
 		'name' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),

@@ -14,3 +14,22 @@
 #11 C:\wamp\cake\lib\Cake\Routing\Dispatcher.php(89): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
 #12 C:\wamp\cake\blog\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #13 {main}
+2011-12-27 11:36:56 Error: [MissingControllerException] Controller class UsersController could not be found.
+#0 C:\wamp\cake\blog\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-12-27 11:37:22 Error: [MissingControllerException] Controller class UsersController could not be found.
+#0 C:\wamp\cake\blog\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-12-27 11:37:23 Error: [MissingControllerException] Controller class UsersController could not be found.
+#0 C:\wamp\cake\blog\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-12-27 19:37:56 Error: [MissingControllerException] Controller class LOGINController could not be found.
+#0 C:\wamp\cake\blog\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-12-27 19:53:00 Error: [NotFoundException] Invalid post
+#0 [internal function]: PostsController->view('1')
+#1 C:\wamp\cake\lib\Cake\Controller\Controller.php(473): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 C:\wamp\cake\lib\Cake\Routing\Dispatcher.php(107): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\cake\lib\Cake\Routing\Dispatcher.php(89): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\cake\blog\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

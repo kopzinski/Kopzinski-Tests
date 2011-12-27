@@ -29,6 +29,15 @@
 	Router::connect('/', array('controller' => 'posts', 'action' => 'index'));
 	Router::connect('/login', array('controller' => 'users', 'action' => 'login'));
 	Router::connect('/logout', array('controller' => 'users', 'action' => 'logout'));
+        
+        Router::connect('/postagens/:id',
+                            array('controller' => 'posts', 'action' => 'view'),
+                            array('pass' => array('id'), 'id' => '[0-9]+'));
+        
+        Router::connect('/usuarios/:id',
+                    array('controller' => 'users', 'action' => 'view'),
+                    array('pass' => array('id'), 'id' => '[0-9]+'));
+        
 /**
  * ...and connect the rest of 'Pages' controller's urls.
  */
