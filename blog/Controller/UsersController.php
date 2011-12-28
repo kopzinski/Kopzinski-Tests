@@ -9,6 +9,9 @@ App::uses('AppController', 'Controller');
  */
 class UsersController extends AppController {
 
+    public $helpers = array('Js');
+    public $components = array('Session', 'RequestHandler'); 
+    
     function beforeFilter() {
         parent::beforeFilter();
         $this->Auth->allow('*');
@@ -59,6 +62,7 @@ class UsersController extends AppController {
             throw new NotFoundException(__('Invalid user'));
         }
         $this->set('user', $this->User->read(null, $id));
+        $this->set('aUser', $this->User->read(null, $id));
     }
 
     /**

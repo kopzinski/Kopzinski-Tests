@@ -25,6 +25,9 @@
  * its action called 'display', and we pass a param to select the view file
  * to use (in this case, /app/View/Pages/home.ctp)...
  */
+
+        Router::parseExtensions('json');
+
 	//Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
 	Router::connect('/', array('controller' => 'posts', 'action' => 'index'));
 	Router::connect('/login', array('controller' => 'users', 'action' => 'login'));
@@ -37,6 +40,9 @@
         Router::connect('/usuarios/:id',
                     array('controller' => 'users', 'action' => 'view'),
                     array('pass' => array('id'), 'id' => '[0-9]+'));
+        
+        Router::connect('/users_to_sencha',
+                    array('controller' => 'users', 'action' => 'index'));
         
 /**
  * ...and connect the rest of 'Pages' controller's urls.
